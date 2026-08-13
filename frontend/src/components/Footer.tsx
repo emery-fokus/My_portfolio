@@ -24,10 +24,12 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white">
+    <footer className="border-t border-white/10 bg-[#06070d]">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
         <div className="text-center sm:text-left">
-          <p className="font-semibold text-slate-900">Portfolio Data Analyst</p>
+          <p className="font-mono font-semibold text-white">
+            portfolio<span className="text-violet-400">.</span>dev
+          </p>
           <p className="text-sm text-slate-500">Power BI · Python · Django</p>
         </div>
 
@@ -39,7 +41,7 @@ export default function Footer() {
               target={social.href.startsWith('http') ? '_blank' : undefined}
               rel="noreferrer"
               aria-label={social.label}
-              className="text-slate-500 transition-colors hover:text-indigo-600"
+              className="text-slate-500 transition-colors hover:text-violet-300"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                 {social.icon}
@@ -48,7 +50,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="border-t border-slate-100 py-4 text-center text-xs text-slate-400">
+      <div className="border-t border-white/5 py-4 text-center text-xs text-slate-600">
         © {new Date().getFullYear()} Mon Portfolio. Tous droits réservés.
       </div>
     </footer>
