@@ -30,7 +30,7 @@ export default function Footer() {
           <p className="font-mono font-semibold text-white">
             portfolio<span className="text-violet-400">.</span>dev
           </p>
-          <p className="text-sm text-slate-500">Power BI · Python · Django</p>
+          <p className="text-sm text-slate-500">Power BI · Python · SQL</p>
         </div>
 
         <div className="flex items-center gap-4">

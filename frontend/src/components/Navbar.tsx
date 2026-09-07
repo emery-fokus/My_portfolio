@@ -76,6 +76,13 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <a
+            href="mailto:fokwangemery@icloud.com"
+            onClick={() => setOpen(false)}
+            className="mt-2 rounded-lg bg-gradient-to-r from-violet-500 to-cyan-400 px-4 py-2 text-center text-sm font-semibold text-[#06070d] transition-opacity hover:opacity-90"
+          >
+            Me contacter
+          </a>
         </div>
       )}
     </header>
