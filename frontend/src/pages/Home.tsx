@@ -63,6 +63,13 @@ export default function Home() {
             >
               Me contacter
             </a>
+            <a
+              href="/CV_Emery_Fokwang.pdf"
+              download
+              className="rounded-lg border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200 backdrop-blur transition-colors hover:bg-white/5"
+            >
+              Télécharger mon CV
+            </a>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-3 gap-4 border-t border-white/10 pt-8">

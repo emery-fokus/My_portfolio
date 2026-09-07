@@ -8,7 +8,7 @@ const skillGroups = [
   },
   {
     title: 'Développement',
-    skills: ['Python (Pandas, NumPy)', 'Django & Flask', 'SQL'],
+    skills: ['Python (Pandas, NumPy)', 'SQL'],
     color: 'from-cyan-400 to-emerald-400',
   },
 ]
@@ -33,8 +33,8 @@ export default function About() {
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-white">À propos de moi</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-400">
-            Étudiante passionnée par l'analyse de données et la découverte d'insights. En formation sur Python,
-            Power BI et développement web avec Django.
+            Étudiant passionné par l'analyse de données et la découverte d'insights. En formation sur Python
+            et Power BI.
           </p>
         </div>
 
