@@ -15,3 +15,4 @@ npm run dev
 ## Déploiement
 
 Déployé sur [Vercel](https://vercel.com). Lors de l'import du projet, définir le **Root Directory** sur `frontend` (build command et output directory sont auto-détectés pour Vite).
+
