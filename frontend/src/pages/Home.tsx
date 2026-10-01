@@ -6,11 +6,12 @@ const FILTERS: Array<{ value: Category | 'ALL'; label: string }> = [
   { value: 'ALL', label: 'Tous' },
   { value: 'PBI', label: CATEGORY_LABELS.PBI },
   { value: 'PY', label: CATEGORY_LABELS.PY },
+  { value: 'XL', label: CATEGORY_LABELS.XL },
 ]
 
 const stats = [
   { value: `${projects.length}`, label: 'Projets réalisés' },
-  { value: '2', label: 'Domaines : BI & Python' },
+  { value: '3', label: 'Domaines : Excel, BI & Python' },
   { value: '100%', label: 'Analyses orientées décision' },
 ]
 

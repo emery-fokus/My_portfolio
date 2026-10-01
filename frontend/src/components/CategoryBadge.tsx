@@ -4,6 +4,7 @@ import { CATEGORY_LABELS } from '../data/projects'
 const CATEGORY_STYLES: Record<Category, string> = {
   PBI: 'bg-amber-400/10 text-amber-300 ring-1 ring-amber-400/30 shadow-[0_0_16px_-4px_rgba(251,191,36,0.5)]',
   PY: 'bg-cyan-400/10 text-cyan-300 ring-1 ring-cyan-400/30 shadow-[0_0_16px_-4px_rgba(34,211,238,0.5)]',
+  XL: 'bg-lime-400/10 text-lime-300 ring-1 ring-lime-400/30 shadow-[0_0_16px_-4px_rgba(163,230,53,0.5)]',
   WEB: 'bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/30 shadow-[0_0_16px_-4px_rgba(52,211,153,0.5)]',
 }
 

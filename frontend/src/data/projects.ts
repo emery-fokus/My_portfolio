@@ -8,13 +8,15 @@ import detailLivreur1 from '../assets/projects/detail-livreur-1.png'
 import detailEcommerce1 from '../assets/projects/detail-ecommerce-1.png'
 import detailAvisAmazon1 from '../assets/projects/detail-avis-amazon-1.png'
 import detailAvisAmazon2 from '../assets/projects/detail-avis-amazon-2.png'
+import thumbFootballExcel from '../assets/projects/thumb-football-excel.jpg'
 
-export type Category = 'PBI' | 'PY' | 'WEB'
+export type Category = 'PBI' | 'PY' | 'WEB' | 'XL'
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   PBI: 'Power BI',
   PY: 'Python',
   WEB: 'Django / Web',
+  XL: 'Excel',
 }
 
 export interface Project {
@@ -33,6 +35,37 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'analyse-performance-joueurs-football-excel',
+    title: 'Recrutement football – Analyse de performance des joueurs',
+    category: 'XL',
+    summary:
+      'Analyse Excel de 210 joueurs d’une ligue de football pour aider une cellule de recrutement à repérer les joueurs les plus performants… et les plus sous-payés.',
+    description: `Contexte : une cellule de recrutement prépare son mercato avec un budget serré. Le directeur sportif veut savoir quels joueurs sont les plus performants, et surtout lesquels sont sous-payés par rapport à ce qu'ils apportent.
+
+Le projet couvre toute la chaîne d'analyse dans Excel :
+– Nettoyage de l'export brut avec Power Query (lignes vides, doublons, espaces, casse, salaires stockés en texte, séparation prénom / nom)
+– Enrichissement par formules : RECHERCHEX vers une table des clubs, SI imbriqués pour les catégories d'âge, SIERREUR pour éviter les divisions par zéro
+– Création d'indicateurs métier : contributions (buts + passes décisives), contributions par 90 minutes et coût par contribution
+– Analyse avec des tableaux croisés dynamiques (masse salariale par club, top buteurs, salaire moyen par poste, filtres sur l'âge et le temps de jeu)
+– Tableau de bord avec chiffres clés et graphiques
+– Synthèse des insights et recommandation de recrutement
+
+Indicateur clé : le coût par contribution (salaire ÷ buts et passes décisives), qui permet de comparer la rentabilité des joueurs au-delà de leur seul salaire.
+
+Données fictives créées pour l'exercice (ligue, clubs et joueurs imaginaires).`,
+    tools: ['Excel', 'Power Query', 'Tableaux croisés dynamiques', 'RECHERCHEX', 'SI / SIERREUR'],
+    keyResults: [
+      '210 joueurs nettoyés et enrichis via Power Query',
+      'Le club à la plus grosse masse salariale (117 M€, 25 % du total) termine 1er',
+      'Meilleur joueur de la ligue : 24 contributions pour seulement 1,05 M€ par an',
+      'Les attaquants sont le poste le plus cher (2,9 M€ de salaire moyen)',
+      '3 jeunes joueurs recommandés pour 2,23 M€ au total, moins qu’un attaquant moyen',
+    ],
+    thumbnail: thumbFootballExcel,
+    images: [],
+    featured: true,
+  },
   {
     slug: 'generateur-dhistoires-multimedia-mistral-grok',
     title: 'Générateur d’histoires multimédia – Mistral & Grok',
